@@ -1,19 +1,22 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    margin: 0px;
-    padding: 2px;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0; /* Cambiado de 2px a 0 para eliminar el borde */
+    background: url('imagenes/kali02.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #5a5858;
 }
 
 header {
-    background-color: #757474;
+    background-color: rgba(117, 116, 116, 0.8); /* Fondo semitransparente */
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
     text-align: right;
     position: fixed;
-    width: 98%;
-    padding: 10px ;
+    width: 100%; /* Ajustado a 100% para cubrir todo el ancho */
+    top: 0;
+    z-index: 1000; /* Asegurar que el header esté siempre encima del contenido */
 }
 
 nav ul {
@@ -34,11 +37,15 @@ nav ul li a {
 
 main {
     padding: 20px;
+    margin-top: 60px; /* Espacio para el header fijo */
 }
 
 section {
     margin-bottom: 40px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para secciones */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h1, h2, h3 {
@@ -89,10 +96,11 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 5px ;
+    padding: 10px; /* Ajustado para mayor espacio */
     background-color: #d47c41;
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1000; /* Asegurar que el footer esté siempre encima del contenido */
 }
